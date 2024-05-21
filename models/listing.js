@@ -28,11 +28,6 @@ const listingSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "User",
     },
-    category: {
-        type: String,
-        enum: ["Rooms", "Iconic Cities", "Mountains", "Castles", "Pools", "Camping", "Farms", "Arctic", "Domes", "Boats"],
-        required: true
-    }
 });
 
 const Listing = mongoose.model("Listing", listingSchema);
