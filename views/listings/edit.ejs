@@ -37,6 +37,14 @@
                     </div>
 
                     <div class="mb-3 col-md-8">
+                        <label for="category" class="form-label">Category</label>
+                        <input required type="text" class="form-control" name="listing[category]"
+                            value="<%= listing.category %>">
+                        <div class="invalid-feedback">Category should be valid</div>
+
+                    </div>
+
+                    <div class="mb-3 col-md-8">
                         <label for="country" class="form-label">Country</label>
                         <input required type="text" class="form-control" name="listing[country]"
                             value="<%= listing.country %>">
